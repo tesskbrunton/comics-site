@@ -1,0 +1,529 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: 'Roboto', sans-serif;
+     background: rgb(254, 246, 246);
+     width: 100%;
+     overflow-x: hidden;
+}
+
+
+img {
+     width: 100%;
+     height: auto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     display: flex;
+     justify-content: space-between;
+}
+
+.hamburger {
+     display: none;
+     cursor: pointer;
+}
+
+.bar {
+     display: block;
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     background-color: gray;
+}
+
+nav {
+  padding: 25px 15px 0 0;
+}
+
+.logo {
+     padding: 5px 10px 5px 15px;
+     font-size: 25px;
+     font-weight: 300px;
+     /* color: rgb(42, 42, 42); */
+     background: hotpink;
+     /* background-color: rgb(202, 64, 39); */
+     color: white;
+     position: relative;
+     margin-top: 25px;
+}
+
+.logo-triangle {
+     position: absolute;
+     top: 0;
+     right: -33.750px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 38.750px 33.750px 0 0;
+     /* border-color: hotpink transparent transparent transparent; */
+     /* border-color: rgb(194, 42, 42) transparent transparent transparent; */
+     border-color: hotpink transparent transparent transparent;
+}
+
+
+
+.nav-link {
+     padding-right: 15px;
+     color: gray;
+     font-size: 14px;
+}
+
+.twitter-icon {
+     fill: gray;
+     width: 20px;
+     margin-bottom: -6px;
+}
+
+.instagram-icon {
+     fill: gray;
+     width: 20px;
+     margin-bottom: -6px;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+
+/* LANDING */
+
+.preorder-banner {
+     display: flex;
+     justify-content: center;
+     font-size: 30px;
+}
+
+.landing {
+     display: flex;
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 20px 20px 0 20px;
+}
+
+.imagewrapper {
+    padding-right: 18px;
+    position: relative;
+
+}
+
+.bookimg {
+     position: absolute;
+     top: -21%;
+     left: -75%;
+     right: 0;
+     width: 250%;
+     height: auto;
+     z-index: -1;
+}
+
+.book-description {
+     max-width: 460px;
+     padding: 20px 0 0 18px;
+}
+
+.book-title {
+     display: flex;
+     justify-content: center;
+     font-weight: 400;
+}
+
+.landing-text {
+     line-height: 22px;
+}
+
+.pre-order-header,
+.preorder-wrapper,
+.release-date {
+     text-align: center;
+     font-weight: 400;
+}
+
+.release-date,
+.pre-order-header {
+     font-weight: 500;
+}
+
+.preorder-wrapper {
+     max-width: 430px;
+     margin: 0 auto;
+}
+
+
+.preorder-links-row-1,
+.preorder-links-row-2 {
+     display: flex;
+     justify-content: space-between;
+}
+
+.order-link {
+     font-size: 14px;
+     /* padding: 8px;
+     background: rgb(234, 234, 159);
+     border: solid 1px rgb(219, 219, 151);
+     margin: 10px;
+     border-radius: 4px; */
+}
+
+.special-buttons {
+     display: inline-block;
+     padding: 10px;
+     width: 133px;
+     margin-top: 10px;
+     /* background-color: #77e8b9; */
+     background-color: rgb(243, 230, 154);
+     /* background-color: peachpuff; */
+     /* background-color: blanchedalmond; */
+     /* background-color: rgb(188, 221, 194); */
+     clip-path: polygon(5% 10%, 46% 1%, 46% 10%, 100% 0, 95% 90%, 31% 100%, 31% 90%, 0% 100%);
+     cursor: pointer;
+     transition: all .1s ease,clip-path .2s ease,clip-path .2s ease;
+}
+
+.special-buttons:hover {
+     font-weight: bold;
+     clip-path: polygon(5% 10%,66% 1%,66% 10%,100% 0,95% 90%,51% 100%,51% 90%,0 100%);
+     transform: scale(1.1)
+}
+
+.kirkus-review {
+     max-width: 310px;
+     margin: 60px auto;
+     padding: 5px;
+     font-size: 15px;
+     background-color: blanchedalmond;
+}
+
+
+/* BLURBS */
+
+
+.blurbs {
+     max-width: 1000px;
+     margin: 0 auto;
+     padding: 0 20px;
+     display: flex;
+     justify-content: space-between;
+     padding-top: 15px;
+}
+
+.blurb {
+     max-width: 230px;  
+     font-size: 15px;  
+}
+
+.byline {
+     font-weight: 500;
+}
+
+/******************************************
+/* ABOUT
+/*******************************************/
+
+.about-section {
+     max-width: 870px;
+     margin: 40px auto 0 auto;
+     background-color: rgb(245, 234, 225);
+     display: flex;
+}
+
+
+.about-padding {
+     padding: 0 20px;
+}
+
+.about-text {
+     padding: 30px 30px 30px 75px;
+     font-size: 14px;
+     line-height: 18px;
+     color: rgb(60, 58, 58);
+}
+
+.about-title,
+.contact-title {
+     display: inline;
+     font-size: 15px;
+     color: white;
+     background-color:  rgb(90, 81, 62);
+     font-weight: 400;
+     padding: 5px 10px;
+     position: relative;
+     margin: -17px;
+}
+
+.about-triangle {
+     position: absolute;
+     top: 0;
+     right: 71px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 28px 0 0 30px;
+     border-color: rgb(90, 81, 62) transparent transparent transparent;
+}
+
+.contact-triangle {
+     position: absolute;
+     top: 0;
+     right: 91px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 28px 0 0 30px;
+     border-color:  rgb(90, 81, 62) transparent transparent transparent;
+}
+
+/* .logo-triangle {
+     position: absolute;
+     top: 0;
+     right: -33.750px;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 38.750px 33.750px 0 0;
+     /* border-color: hotpink transparent transparent transparent; */
+     /* border-color: rgb(194, 42, 42) transparent transparent transparent; */
+     /* border-color: rgb(202, 64, 39) transparent transparent transparent;
+} */ 
+
+.about-image-wrapper {
+     max-width: 370px;
+     padding: 30px 75px 30px 30px;
+}
+
+.photo-credit {
+     color: gray;
+     font-size: 10px;
+     display: flex;
+     justify-content: flex-end;
+}
+
+.contact-section {
+     max-width: 870px;
+     margin: 0 auto;
+     padding: 30px 75px 30px 75px;
+     background-color: rgb(245, 234, 225);
+     display: flex;
+}
+
+.contact-text {
+     font-size: 14px;
+     line-height: 18px;
+     color: rgb(60, 58, 58);
+     
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 926px) {
+     main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+     }
+
+     .landing {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .imagewrapper {
+          max-width: 500px;
+          margin: 0 auto;
+      }
+
+      .preorder-wrapper {
+          max-width: 400px;
+          margin: 0 auto;
+      }
+
+      /* .book-description {
+          margin: -55px auto 0 auto;
+      } */
+
+
+      .blurbs {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          max-width: 500px;
+          margin: -30px auto 30px auto;
+      }
+
+      .blurb {
+          max-width: 450px;
+          margin: 0 auto;
+          background:rgb(245, 234, 225);
+          padding: 0 20px 0 20px;
+      }
+
+      /* .text {
+          padding: 0 20px 10px 20px;
+      }
+
+      .byline {
+          margin-top: -5px;
+      }
+ */
+     
+      .about-section {
+          max-width: 500px;
+          margin: 40px auto 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .about-text > p {
+          margin: 20px auto 0 auto;
+      }
+
+      .contact-section {
+          max-width: 500px;
+          margin: -25px auto 0 auto;
+          padding: 30px 75px 30px 75px;
+          background-color: rgb(245, 234, 225);
+          /* display: flex; */
+     }
+
+      .about-image-wrapper {
+          max-width: 370px;
+          margin: -30px auto 0 auto;
+          padding: 30px 75px 30px 30px;
+     }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+     
+     /* HAMBURGER */
+     
+     .hamburger {
+          display: block;
+     }
+
+     .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+     }
+
+     .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+     }
+
+     .nav-menu {
+          position: absolute;
+          right: -100%;
+          top: 80px;
+          gap: 0;
+          flex-direction: column;
+          width: 100%;
+          text-align: right;
+          transition: 0.3s;
+     }
+
+     .nav-link {
+               margin: 16px 0;
+          }
+
+     .nav-menu.active {
+          right: 0;
+     }
+          
+
+     .logo {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 18px;
+          max-width: 115px;
+          padding: 5px -18px 5px 5px;
+     }
+     
+     .logo-triangle {
+          position: absolute;
+          top: 0;
+          right: -36.750px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 50.750px 37.750px 0 0;
+          /* border-color: hotpink transparent transparent transparent; */
+          /* border-color: rgb(194, 42, 42) transparent transparent transparent; */
+          border-color: hotpink transparent transparent transparent;
+     }
+
+     /* .preorder-wrapper {
+          display: flex;
+          justify-content: center;
+     }
+     
+     .preorder-links-row-1,
+     .preorder-links-row-2 {
+         display: flex;
+         flex-direction: column;
+         margin-top: 20px;
+     }
+     
+     .kirkus-review {
+      
+     } */
+
+     .nav {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .imagewrapper {
+               max-width: 350px;
+               margin: 0 auto;
+     }
+
+     .preorder-wrapper {
+          max-width: 400px;
+          margin: 0 auto;
+      }
+
+      .book-description {
+          margin: 0;
+      }
+
+
+}
