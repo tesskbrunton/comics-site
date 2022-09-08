@@ -219,6 +219,7 @@ a {
      padding: 5px;
      font-size: 15px;
      background-color: blanchedalmond;
+     text-align: center;
 }
 
 
@@ -259,7 +260,7 @@ a {
      padding: 0 20px;
 }
 
-.about-text {
+.about-wrapper {
      padding: 30px 30px 30px 75px;
      font-size: 14px;
      line-height: 18px;
@@ -281,7 +282,7 @@ a {
 .about-triangle {
      position: absolute;
      top: 0;
-     right: 71px;
+     right: 68px;
      width: 0;
      height: 0;
      border-style: solid;
@@ -292,7 +293,7 @@ a {
 .contact-triangle {
      position: absolute;
      top: 0;
-     right: 91px;
+     right: 87px;
      width: 0;
      height: 0;
      border-style: solid;
@@ -333,16 +334,24 @@ a {
      display: flex;
 }
 
-.contact-text {
+.contact-wrapper {
      font-size: 14px;
      line-height: 18px;
      color: rgb(60, 58, 58);
      
 }
 
-footer {
 
+/******************************************
+/* 404 PAGE
+/*******************************************/
+
+.error-wrapper {
+     font-size: 13px;
+     width: 400px;
+     margin: 0 auto;
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -371,9 +380,9 @@ footer {
           margin: 0 auto;
       }
 
-      /* .book-description {
+      .book-description {
           margin: -55px auto 0 auto;
-      } */
+      }
 
 
       .blurbs {
@@ -425,6 +434,17 @@ footer {
           margin: -30px auto 0 auto;
           padding: 30px 75px 30px 30px;
      }
+
+     .about-text {
+          padding-right: 20px;
+      }
+
+      .about-text,
+      .contact-text {
+          margin-left: -20px;
+
+      }
+
 
 }
 
@@ -490,7 +510,7 @@ footer {
           border-color: hotpink transparent transparent transparent;
      }
 
-     /* .preorder-wrapper {
+     .preorder-wrapper {
           display: flex;
           justify-content: center;
      }
@@ -499,12 +519,13 @@ footer {
      .preorder-links-row-2 {
          display: flex;
          flex-direction: column;
-         margin-top: 20px;
+         margin-top: 10px;
      }
      
      .kirkus-review {
-      
-     } */
+          margin: 40px;
+ 
+     }
 
      .nav {
           display: flex;
@@ -525,5 +546,15 @@ footer {
           margin: 0;
       }
 
+      
+      .about-text {
+          padding-right: 20px;
+      }
+
+      .about-text,
+      .contact-text {
+          margin-left: -30px;
+
+      }
 
 }
