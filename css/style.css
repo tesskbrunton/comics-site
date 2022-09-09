@@ -23,7 +23,8 @@
 
 body {
      font-family: 'Roboto', sans-serif;
-     background: rgb(254, 246, 246);
+     /* background: rgb(254, 246, 246); */
+     background: rgb(254, 250, 246);
      width: 100%;
      overflow-x: hidden;
 }
@@ -66,9 +67,7 @@ nav {
      padding: 5px 10px 5px 15px;
      font-size: 25px;
      font-weight: 300px;
-     /* color: rgb(42, 42, 42); */
      background: hotpink;
-     /* background-color: rgb(202, 64, 39); */
      color: white;
      position: relative;
      margin-top: 25px;
@@ -77,13 +76,11 @@ nav {
 .logo-triangle {
      position: absolute;
      top: 0;
-     right: -33.750px;
+     right: -32.750px;
      width: 0;
      height: 0;
      border-style: solid;
      border-width: 38.750px 33.750px 0 0;
-     /* border-color: hotpink transparent transparent transparent; */
-     /* border-color: rgb(194, 42, 42) transparent transparent transparent; */
      border-color: hotpink transparent transparent transparent;
 }
 
@@ -297,7 +294,7 @@ a {
      width: 0;
      height: 0;
      border-style: solid;
-     border-width: 28px 0 0 30px;
+     border-width: 26.5px 0 0 30px;
      border-color:  rgb(90, 81, 62) transparent transparent transparent;
 }
 
