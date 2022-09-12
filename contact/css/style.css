@@ -92,6 +92,10 @@ nav {
      font-size: 14px;
 }
 
+.highlighted {
+     border-bottom: solid 1px gray;
+}
+
 .twitter-icon {
      fill: gray;
      width: 20px;
